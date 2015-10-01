@@ -50,10 +50,24 @@ public class Task2
 			}
 		}
 		System.out.println("Ascending order");
+		File file = new File("c:/newfile.txt");
+		if (!file.exists()) 
+		{
+			file.createNewFile();
+		}
+		
+		FileOutputStream fileOutput = new FileOutputStream(file);
+		
 		for(int i=0;i<l;++i)
 		{
 			System.out.println(arrayList.get(i).getId() + "     " + arrayList.get(i).getName());
+			byte[] contentInBytes = arrayList.get(i).getName().getBytes();
+			fileOutput.write(contentInBytes);
+			
 		}
+		fileOutput.flush();
+		fileOutput.close();
+		
 		
 		
 
