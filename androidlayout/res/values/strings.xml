@@ -4,5 +4,8 @@
     <string name="app_name">androidlayout</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
+	<string name="area_of_Triangle">area of triangle</string>
+	<string name="area_of_square">area of square</string>
+	<string name="area_of_cube">area of cube</string>
+	
 </resources>
